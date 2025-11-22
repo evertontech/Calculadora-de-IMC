@@ -5,9 +5,10 @@
 
 print("Olá, gostaria de calcular o seu IMC?")
 
-peso = float(input("Informe seu peso: "))
-
-altura = float(input("Informa a sua altura: "))
+# É bom adicionar um tratamento de erro (try/except) para entradas não numéricas,
+# mas para este exercício, assumimos entradas válidas.
+peso = float(input("Informe seu peso (kg): "))
+altura = float(input("Informe a sua altura (m): "))
 
 IMC = peso / (altura * altura)
 
@@ -23,13 +24,15 @@ print("O seu IMC é: {:.2f}".format(IMC))
 
 if IMC >= 40:
     print("Obesidade Grau III")
-elif IMC > 34.9 and IMC <= 39.9:
+elif IMC >= 35:
     print("Obesidade Grau II")
-elif IMC > 29.9 and IMC <= 34.9:
+elif IMC >= 30:
     print("Obesidade Grau I")
-elif IMC > 24.9 and IMC <= 29.9:
+elif IMC >= 25:
     print("Sobrepeso")
-elif IMC >= 18.5 and IMC <= 24.9:
+elif IMC >= 18.5:
     print("Peso normal")
 else:
     print("Abaixo do peso")
+
+
