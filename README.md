@@ -1,6 +1,6 @@
 # Calculadora-de-IMC
 
-#### Programa em python que calcula o IMC de uma pessoa e mostra a classificação do IMC (Adultos)
+- Programa em python que calcula o IMC de uma pessoa e mostra a classificação do IMC (Adultos)
 
 #### Calculadora de IMC
 
